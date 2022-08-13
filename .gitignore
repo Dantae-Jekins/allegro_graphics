@@ -30,3 +30,13 @@
 *.exe
 *.out
 *.app
+
+
+*.vs
+*.vim
+*.vc
+*.config
+*x64
+*packages
+*.sln
+*.vcx*

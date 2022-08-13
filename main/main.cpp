@@ -8,10 +8,9 @@
 #include <allegro5/allegro_primitives.h>
 
 #include <stdio.h> 
-#include <iostream> //usar ambos é redundante
-
-#include "Player_Data.h"
-#include "render.h"
+#include <iostream> 
+//! stdio para o que permanece no código
+//! iostream apenas para testes (iostream não é performático)
 
 #define WIN_HEIGHT 480
 #define WIN_WIDTH 720
@@ -31,9 +30,7 @@ int main()
 	} program;
 
 	/// Estruturas básicas
-	Player player;
-	Camera* camera = &player.Cam;
-	Handle_Render render;
+	// declarar aqui
 
 	/// Estruturas allegro
 	ALLEGRO_DISPLAY* display = 0;

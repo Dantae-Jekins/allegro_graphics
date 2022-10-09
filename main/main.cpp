@@ -12,6 +12,10 @@
 //! stdio para o que permanece no código
 //! iostream apenas para testes (iostream não é performático)
 
+#include "../3D/Base.h"
+#include "../3D/Point.h"
+#include "../3D/Vector.h"
+
 #define WIN_HEIGHT 480
 #define WIN_WIDTH 720
 #define FPS 60.0
@@ -29,24 +33,24 @@ int main()
 		bool paused = false;
 	} program;
 
-	/// Estruturas básicas
-	// declarar aqui
+	
+	/// estruturas -----------------------------------
 
-	/// Estruturas allegro
+
+
+
+	/// estruturas allegro --------------------------
 	ALLEGRO_DISPLAY* display = 0;
 	ALLEGRO_EVENT_QUEUE* queue = 0;
 	ALLEGRO_TIMER* timer = 0;
 	
-	/// Área de código --------------------------------
+	/// Área de código teste ou de setup --------------
 	/// -----------------------------------------------
-
-	
-
 
 
 	/// -----------------------------------------------
 	/// prepara o allegro -----------------------------
-	bool success = false; // para não renderizar 
+	bool success = true; // para não renderizar 
 	if (success == false)
 		goto libmem;
 
